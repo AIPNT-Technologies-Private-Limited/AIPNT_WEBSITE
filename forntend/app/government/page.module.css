@@ -1,0 +1,391 @@
+/* Government Work Orders — Purple/blue theme matching #3902ff */
+
+.hero {
+  position: relative;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1e1b4b 0%, #3902ff 50%, #2563eb 100%);
+  overflow: hidden;
+  padding: 120px 24px 60px;
+}
+
+.heroBg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(30, 27, 75, 0.85) 0%, rgba(57, 2, 255, 0.75) 100%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Showcase Section */
+.showcaseSection {
+  padding: 60px 24px;
+  text-align: center;
+  background: #f0f0fa;
+}
+
+.showcaseImage {
+  max-width: 900px;
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+}
+
+.showcaseCaption {
+  font-size: 15px;
+  color: #666;
+  margin-top: 16px;
+  font-style: italic;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  max-width: 720px;
+}
+
+.badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.9);
+  padding: 6px 18px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
+}
+
+.heroContent h1 {
+  font-size: 52px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 18px;
+  line-height: 1.15;
+}
+
+.heroContent p {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.ctaButton {
+  display: inline-block;
+  background: #ff9900;
+  color: #fff;
+  padding: 16px 36px;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.25s ease, transform 0.2s ease;
+}
+
+.ctaButton:hover {
+  background: #00ff44;
+  color: #1a1a2e;
+  transform: translateY(-2px);
+}
+
+/* Capabilities Section */
+.capabilitiesSection {
+  padding: 80px 24px;
+  text-align: center;
+  background: #f8f9fa;
+}
+
+.capabilitiesSection h2 {
+  font-size: 36px;
+  color: #1a1a2e;
+  margin-bottom: 10px;
+}
+
+.sectionSub {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 48px;
+}
+
+.capabilitiesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 28px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.capCard {
+  background: #fff;
+  border-radius: 14px;
+  padding: 36px 28px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.capCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.12);
+}
+
+.capIcon {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, rgba(57, 2, 255, 0.12), rgba(37, 99, 235, 0.1));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #3902ff;
+  margin-bottom: 18px;
+}
+
+.capCard h3 {
+  font-size: 22px;
+  color: #1a1a2e;
+  margin-bottom: 10px;
+}
+
+.capCard p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Framework Section */
+.frameworkSection {
+  padding: 80px 24px;
+  text-align: center;
+  background: 
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(135deg, #1e1b4b, #3902ff);
+  background-size: 30px 30px, 30px 30px, 100% 100%;
+}
+
+.frameworkSection h2 {
+  font-size: 36px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.frameworkSection .sectionSub {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.frameworkGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.frameworkStep {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  padding: 32px 24px;
+  text-align: center;
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.frameworkStep:hover {
+  background: rgba(255, 255, 255, 0.14);
+  border-color: #ff9900;
+}
+
+.frameworkStepNum {
+  font-size: 32px;
+  font-weight: 800;
+  color: #ff9900;
+  margin-bottom: 8px;
+}
+
+.frameworkIcon {
+  font-size: 28px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 14px;
+}
+
+.frameworkStep h3 {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.frameworkStep p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.5;
+}
+
+/* Compliance Section */
+.complianceSection {
+  display: flex;
+  padding: 80px 24px;
+  background: #f8f9fa;
+  gap: 48px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.complianceContent {
+  flex: 1.5;
+}
+
+.complianceContent h2 {
+  font-size: 32px;
+  color: #1a1a2e;
+  margin-bottom: 12px;
+}
+
+.complianceContent > p {
+  font-size: 17px;
+  color: #555;
+  margin-bottom: 28px;
+  line-height: 1.6;
+}
+
+.complianceList {
+  list-style: none;
+}
+
+.complianceList li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  font-size: 16px;
+  color: #333;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.complianceList li svg {
+  color: #3902ff;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+.complianceVisual {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.trustBadge {
+  background: linear-gradient(135deg, #1e1b4b, #3902ff);
+  border-radius: 16px;
+  padding: 32px 28px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.trustIcon {
+  font-size: 36px;
+  color: #ff9900;
+  flex-shrink: 0;
+}
+
+/* CTA Section */
+.ctaSection {
+  padding: 80px 24px;
+  text-align: center;
+  background: 
+    radial-gradient(rgba(255, 153, 0, 0.1) 1px, transparent 1px),
+    linear-gradient(135deg, #1a1a2e, #0f3460);
+  background-size: 15px 15px, 100% 100%;
+}
+
+.ctaSection h2 {
+  font-size: 36px;
+  color: #fff;
+  margin-bottom: 14px;
+}
+
+.ctaSection p {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 30px;
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Project Model Section */
+.projectModelSection {
+  padding: 80px 24px;
+  background: white;
+  text-align: center;
+}
+
+.projectModelSection h2 {
+  font-size: 36px;
+  color: #1a1a2e;
+  margin-bottom: 10px;
+}
+
+.pamphletContainer {
+  max-width: 900px;
+  margin: 40px auto 0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.pamphletContainer img {
+  width: 100%;
+  display: block;
+}
+
+.pamphletContainer:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive */
+@media (max-width: 920px) {
+  .heroContent h1 {
+    font-size: 34px;
+  }
+
+  .heroContent p {
+    font-size: 17px;
+  }
+
+  .capabilitiesGrid,
+  .frameworkGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .complianceSection {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .complianceList {
+    text-align: left;
+  }
+}

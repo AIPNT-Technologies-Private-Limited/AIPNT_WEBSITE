@@ -1,0 +1,332 @@
+/* About Page Styles - Professional Enterprise Tech Theme */
+
+.hero {
+  position: relative;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: 
+    linear-gradient(rgba(26, 26, 46, 0.94), rgba(22, 33, 62, 0.98)),
+    repeating-linear-gradient(45deg, rgba(255, 153, 0, 0.03) 0px, rgba(255, 153, 0, 0.03) 1px, transparent 1px, transparent 15px);
+  background-color: #1a1a2e;
+  overflow: hidden;
+  padding: 120px 24px 60px;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  max-width: 800px;
+}
+
+.badge {
+  display: inline-block;
+  background: rgba(255, 153, 0, 0.15);
+  color: #ff9900;
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 24px;
+  border: 1px solid rgba(255, 153, 0, 0.3);
+}
+
+.heroContent h1 {
+  font-size: 48px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.heroContent p {
+  font-size: 20px;
+  color: #a0aabf;
+  line-height: 1.6;
+}
+
+/* Mission Section */
+.missionSection {
+  padding: 100px 24px;
+  background: 
+    radial-gradient(circle at 20% 20%, rgba(255, 153, 0, 0.08) 0%, transparent 40%),
+    radial-gradient(circle at 80% 80%, rgba(67, 233, 123, 0.06) 0%, transparent 40%),
+    linear-gradient(135deg, #ffffff 0%, #fcfdff 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.missionGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.missionCard {
+  background: #ffffff;
+  padding: 50px 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.06);
+  text-align: left;
+  border-top: 4px solid #ff9900;
+  transition: transform 0.3s ease;
+}
+
+.missionCard:hover {
+  transform: translateY(-5px);
+}
+
+.missionIcon {
+  font-size: 46px;
+  color: #1a1a2e;
+  margin-bottom: 24px;
+}
+
+.missionCard h2 {
+  font-size: 28px;
+  color: #1a1a2e;
+  margin-bottom: 16px;
+  font-weight: 800;
+}
+
+.missionCard p {
+  font-size: 17px;
+  color: #666;
+  line-height: 1.7;
+}
+
+/* Story Section */
+.storySection {
+  padding: 100px 24px;
+  background: 
+    radial-gradient(circle at 15% 85%, rgba(255, 153, 0, 0.05) 0%, transparent 30%),
+    radial-gradient(circle at 85% 15%, rgba(67, 233, 123, 0.04) 0%, transparent 30%),
+    repeating-linear-gradient(0deg, transparent, transparent 29px, rgba(0, 0, 0, 0.02) 30px, rgba(0, 0, 0, 0.02) 31px),
+    linear-gradient(180deg, #f8f9fa 0%, #f1f3f4 100%);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.storySection > * {
+  position: relative;
+  z-index: 1;
+}
+
+.storySection h2 {
+  font-size: 38px;
+  color: #1a1a2e;
+  margin-bottom: 15px;
+  font-weight: 800;
+}
+
+.sectionSub {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 60px;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 40px;
+  width: 2px;
+  background: rgba(26, 26, 46, 0.1);
+}
+
+.timelineItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  text-align: left;
+  position: relative;
+}
+
+.yearBadge {
+  background: #1a1a2e;
+  color: #ff9900;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 800;
+  font-size: 16px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  position: relative;
+  z-index: 2;
+  min-width: 80px;
+  text-align: center;
+}
+
+.timelineContent {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+  flex-grow: 1;
+}
+
+.timelineContent h3 {
+  font-size: 22px;
+  color: #1a1a2e;
+  margin-bottom: 12px;
+}
+
+.timelineContent p {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Worked With Section */
+.workedWithSection {
+  padding: 100px 24px;
+  background: 
+    radial-gradient(circle at 75% 25%, rgba(67, 233, 123, 0.06) 0%, transparent 35%),
+    radial-gradient(circle at 25% 75%, rgba(255, 153, 0, 0.04) 0%, transparent 35%),
+    linear-gradient(45deg, #ffffff 0%, #fbfcfd 50%, #ffffff 100%);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.workedWithGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.workedWithSection h2 {
+  font-size: 38px;
+  color: #1a1a2e;
+  margin-bottom: 15px;
+  font-weight: 800;
+}
+
+.workedWithGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.workedWithCard {
+  background: #f8f9fa;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+  transition: transform 0.3s ease;
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+.workedWithCard:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 153, 0, 0.3);
+}
+
+.workedWithIcon {
+  font-size: 40px;
+  color: #ff9900;
+  margin-bottom: 20px;
+}
+
+.workedWithCard h3 {
+  font-size: 20px;
+  color: #1a1a2e;
+  margin-bottom: 8px;
+}
+
+.workedWithCard p {
+  font-size: 15px;
+  color: #777;
+}
+
+/* CTA */
+.ctaSection {
+  padding: 100px 24px;
+  background: 
+    radial-gradient(circle at 30% 20%, rgba(255, 153, 0, 0.12) 0%, transparent 40%),
+    radial-gradient(circle at 70% 80%, rgba(67, 233, 123, 0.08) 0%, transparent 35%),
+    repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0px, rgba(255, 255, 255, 0.03) 1px, transparent 1px, transparent 20px),
+    linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f2027 100%);
+  text-align: center;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+.ctaSection h2 {
+  font-size: 40px;
+  margin-bottom: 15px;
+  font-weight: 800;
+  position: relative;
+  z-index: 1;
+}
+
+.ctaSection p {
+  font-size: 18px;
+  color: #a0aabf;
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.ctaButton {
+  display: inline-block;
+  background: #ff9900;
+  color: #ffffff;
+  padding: 18px 40px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s;
+  box-shadow: 0 4px 15px rgba(255, 153, 0, 0.3);
+  position: relative;
+  z-index: 1;
+}
+
+.ctaButton:hover {
+  background: #e68a00;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(255, 153, 0, 0.4);
+}
+
+@media (max-width: 768px) {
+  .timeline::before {
+    display: none;
+  }
+  
+  .timelineItem {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .yearBadge {
+    align-self: flex-start;
+  }
+}

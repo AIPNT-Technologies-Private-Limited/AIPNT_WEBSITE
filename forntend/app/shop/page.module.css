@@ -1,0 +1,85 @@
+.shopMain {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: 
+    linear-gradient(rgba(26, 26, 46, 0.94), rgba(22, 33, 62, 0.98)),
+    repeating-linear-gradient(45deg, rgba(255, 153, 0, 0.03) 0px, rgba(255, 153, 0, 0.03) 1px, transparent 1px, transparent 15px);
+  background-color: #1a1a2e;
+  padding: 120px 24px 60px;
+}
+
+.comingSoonContainer {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 153, 0, 0.2);
+  border-radius: 16px;
+  padding: 60px 40px;
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.iconWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.gearIcon {
+  font-size: 64px;
+  color: #ff9900;
+  animation: spin 8s linear infinite;
+}
+
+.comingSoonContainer h1 {
+  font-size: 42px;
+  color: #ffffff;
+  margin-bottom: 16px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.comingSoonContainer p {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.notifyBox {
+  background: rgba(255, 153, 0, 0.1);
+  border: 1px solid rgba(255, 153, 0, 0.3);
+  padding: 16px 24px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.notifyBox p {
+  font-size: 16px;
+  color: #ffcc80;
+  margin: 0;
+  font-weight: 600;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .comingSoonContainer {
+    padding: 40px 24px;
+  }
+  
+  .comingSoonContainer h1 {
+    font-size: 32px;
+  }
+  
+  .comingSoonContainer p {
+    font-size: 16px;
+  }
+}

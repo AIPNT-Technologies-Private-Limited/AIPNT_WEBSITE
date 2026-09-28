@@ -1,0 +1,15 @@
+.git
+.github
+.next
+node_modules
+.npm-cache
+.docker-cli-config
+npm-debug.log*
+.env
+.env.*
+!.env.example
+*.local
+.DS_Store
+Thumbs.db
+README.md
+docker-compose*.yml

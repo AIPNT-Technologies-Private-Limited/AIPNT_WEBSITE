@@ -1,0 +1,474 @@
+/* Corporate Training — Dark theme matching site navbar & feature-section */
+
+.hero {
+  position: relative;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  overflow: hidden;
+  padding: 120px 24px 60px;
+}
+
+.heroBg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(26, 26, 46, 0.82) 0%, rgba(15, 52, 96, 0.78) 100%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Showcase Section */
+.showcaseSection {
+  padding: 60px 24px;
+  text-align: center;
+  background: #f0f0f0;
+}
+
+.showcaseImage {
+  max-width: 900px;
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+}
+
+.showcaseCaption {
+  font-size: 15px;
+  color: #666;
+  margin-top: 16px;
+  font-style: italic;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  max-width: 720px;
+}
+
+.badge {
+  display: inline-block;
+  background: rgba(255, 153, 0, 0.18);
+  color: #ffcc80;
+  padding: 6px 18px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
+}
+
+.heroContent h1 {
+  font-size: 52px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 18px;
+  line-height: 1.15;
+}
+
+.heroContent p {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.ctaButton {
+  display: inline-block;
+  background: #ff9900;
+  color: #fff;
+  padding: 16px 36px;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.25s ease, transform 0.2s ease;
+}
+
+.ctaButton:hover {
+  background: #00ff44;
+  transform: translateY(-2px);
+}
+
+/* Stats Bar */
+.statsBar {
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  background: linear-gradient(90deg, #ff9900, #ff6b00);
+  padding: 0;
+}
+
+.statItem {
+  flex: 1;
+  text-align: center;
+  padding: 28px 20px;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.statItem:last-child {
+  border-right: none;
+}
+
+.statValue {
+  display: block;
+  font-size: 36px;
+  font-weight: 800;
+  color: #fff;
+}
+
+.statLabel {
+  display: block;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.85);
+  margin-top: 4px;
+  font-weight: 600;
+}
+
+/* Tracks Section */
+.tracksSection {
+  padding: 80px 24px;
+  text-align: center;
+  background: #f8f9fa;
+}
+
+.tracksSection h2 {
+  font-size: 36px;
+  color: #1a1a2e;
+  margin-bottom: 10px;
+}
+
+.sectionSub {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 48px;
+}
+
+.tracksGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 28px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.trackCard {
+  background: #fff;
+  border-radius: 14px;
+  padding: 36px 28px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.trackCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.12);
+}
+
+.trackIcon {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, rgba(255, 153, 0, 0.15), rgba(255, 107, 0, 0.1));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #ff9900;
+  margin-bottom: 18px;
+}
+
+.trackCard h3 {
+  font-size: 22px;
+  color: #1a1a2e;
+  margin-bottom: 10px;
+}
+
+.trackCard p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Bootcamps Section (New Pamphlets) */
+.bootcampsSection {
+  background: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.bootcampsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 40px auto 0;
+}
+
+.bootcampCard {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.bootcampCard img {
+  width: 100%;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  display: block;
+}
+
+.bootcampCard:hover {
+  transform: translateY(-5px);
+}
+
+.bootcampOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(26, 26, 46, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.bootcampCard:hover .bootcampOverlay {
+  opacity: 1;
+}
+
+.bootcampOverlay span {
+  color: white;
+  background: #ff9900;
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* Delivery Section */
+.deliverySection {
+  padding: 80px 24px;
+  text-align: center;
+  background: 
+    linear-gradient(rgba(26, 26, 46, 0.94), rgba(26, 26, 46, 0.94)),
+    repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.02) 0px, rgba(255, 255, 255, 0.02) 1px, transparent 1px, transparent 15px),
+    repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.02) 0px, rgba(255, 255, 255, 0.02) 1px, transparent 1px, transparent 15px);
+  background-color: #1a1a2e;
+}
+
+.deliverySection h2 {
+  font-size: 36px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.deliverySection .sectionSub {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.deliveryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.deliveryCard {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  padding: 32px 24px;
+  text-align: left;
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.deliveryCard:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #ff9900;
+}
+
+.deliveryIcon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(255, 153, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: #ff9900;
+  margin-bottom: 16px;
+}
+
+.deliveryCard h3 {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.deliveryCard p {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.6;
+}
+
+/* Video Section */
+.videoSection {
+  display: flex;
+  align-items: center;
+  padding: 80px 24px;
+  background: #f8f9fa;
+  gap: 48px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.videoWrapper {
+  flex: 1;
+}
+
+.videoWrapper iframe {
+  width: 100%;
+  border-radius: 14px;
+  aspect-ratio: 16/9;
+  height: auto;
+}
+
+.videoText {
+  flex: 1;
+}
+
+.videoText h2 {
+  font-size: 32px;
+  color: #1a1a2e;
+  margin-bottom: 14px;
+}
+
+.videoText p {
+  font-size: 17px;
+  color: #555;
+  line-height: 1.7;
+}
+
+/* Outcomes Section */
+.outcomesSection {
+  padding: 80px 24px;
+  background: 
+    radial-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px),
+    linear-gradient(135deg, #aeea94 0%, #7ec87e 100%);
+  background-size: 20px 20px, 100% 100%;
+  text-align: center;
+}
+
+.outcomesSection h2 {
+  font-size: 36px;
+  color: #1a1a2e;
+  margin-bottom: 40px;
+}
+
+.outcomesList {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.outcomeItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  text-align: left;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 24px;
+  border-radius: 14px;
+  backdrop-filter: blur(6px);
+}
+
+.outcomeIcon {
+  font-size: 28px;
+  color: #ff9900;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+.outcomeItem h3 {
+  font-size: 20px;
+  color: #1a1a2e;
+  margin-bottom: 6px;
+}
+
+.outcomeItem p {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* CTA Section */
+.ctaSection {
+  padding: 80px 24px;
+  text-align: center;
+  background: linear-gradient(135deg, #1a1a2e, #0f3460);
+}
+
+.ctaSection h2 {
+  font-size: 36px;
+  color: #fff;
+  margin-bottom: 14px;
+}
+
+.ctaSection p {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 30px;
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive */
+@media (max-width: 920px) {
+  .heroContent h1 {
+    font-size: 34px;
+  }
+
+  .heroContent p {
+    font-size: 17px;
+  }
+
+  .statsBar {
+    flex-wrap: wrap;
+  }
+
+  .statItem {
+    flex: 1 1 50%;
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .videoSection {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .tracksGrid,
+  .deliveryGrid {
+    grid-template-columns: 1fr;
+  }
+}

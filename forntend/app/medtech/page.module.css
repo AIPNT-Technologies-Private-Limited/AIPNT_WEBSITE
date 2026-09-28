@@ -1,0 +1,626 @@
+.pageContainer {
+  background-color: #070b13;
+  color: #f1f5f9;
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', sans-serif;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* ─── Domain Top Utility Bar ─── */
+.topNavStrip {
+  background: rgba(13, 20, 36, 0.75);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(12px);
+  padding: 100px 32px 14px;
+}
+
+.topNavInner {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: #64748b;
+}
+
+.breadcrumbLink {
+  color: #94a3b8;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.breadcrumbLink:hover {
+  color: #2dd4bf;
+}
+
+.breadcrumbCurrent {
+  color: #2dd4bf;
+  font-weight: 600;
+}
+
+.complianceBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(45, 212, 191, 0.08);
+  border: 1px solid rgba(45, 212, 191, 0.25);
+  color: #2dd4bf;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 999px;
+  letter-spacing: 0.3px;
+}
+
+.pulseDot {
+  width: 6px;
+  height: 6px;
+  background-color: #2dd4bf;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #2dd4bf;
+}
+
+/* ─── Hero Section ─── */
+.hero {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 48px 32px 56px;
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.domainBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(45, 212, 191, 0.12);
+  border: 1px solid rgba(45, 212, 191, 0.3);
+  color: #2dd4bf;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: 6px;
+  width: fit-content;
+  margin-bottom: 20px;
+}
+
+.heroTitle {
+  font-size: 54px;
+  font-weight: 800;
+  line-height: 1.12;
+  letter-spacing: -1.5px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.highlightTeal {
+  color: #2dd4bf;
+  background: linear-gradient(135deg, #2dd4bf 0%, #38bdf8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.heroLead {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #94a3b8;
+  margin-bottom: 32px;
+  max-width: 660px;
+}
+
+.heroActions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.btnMain {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #0d9488;
+  background: linear-gradient(135deg, #0d9488 0%, #0284c7 100%);
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 14px 26px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 20px rgba(13, 148, 136, 0.3);
+}
+
+.btnMain:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(13, 148, 136, 0.45);
+}
+
+.btnGhost {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #e2e8f0;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 14px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.btnGhost:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+}
+
+/* ─── Hero Quick Specs Grid ─── */
+.heroMetricsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.metricTile {
+  background: rgba(15, 23, 42, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.metricValue {
+  font-size: 28px;
+  font-weight: 800;
+  color: #f8fafc;
+  letter-spacing: -0.5px;
+}
+
+.metricValueAccent {
+  color: #2dd4bf;
+}
+
+.metricLabel {
+  font-size: 13px;
+  color: #94a3b8;
+  line-height: 1.4;
+}
+
+/* ─── Section Shared Styles ─── */
+.section {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 64px 32px;
+}
+
+.sectionHeader {
+  margin-bottom: 40px;
+}
+
+.sectionCategory {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: #2dd4bf;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.sectionTitle {
+  font-size: 36px;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.8px;
+  margin-bottom: 12px;
+}
+
+.sectionLead {
+  font-size: 16px;
+  color: #94a3b8;
+  max-width: 720px;
+  line-height: 1.6;
+}
+
+/* ─── Flagship DigiSwasth Spotlight ─── */
+.flagshipCard {
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.95) 0%, rgba(13, 31, 45, 0.85) 100%);
+  border: 1px solid rgba(45, 212, 191, 0.25);
+  border-radius: 20px;
+  padding: 44px;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 40px;
+  align-items: center;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+}
+
+.flagshipBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(45, 212, 191, 0.15);
+  color: #2dd4bf;
+  border: 1px solid rgba(45, 212, 191, 0.35);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+.flagshipTitle {
+  font-size: 34px;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.2;
+  margin-bottom: 14px;
+}
+
+.flagshipTagline {
+  font-size: 15px;
+  color: #38bdf8;
+  margin-bottom: 18px;
+  font-weight: 600;
+}
+
+.flagshipDesc {
+  font-size: 15px;
+  color: #cbd5e1;
+  line-height: 1.65;
+  margin-bottom: 24px;
+}
+
+.flagshipPills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+.pillItem {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #e2e8f0;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 5px 12px;
+  border-radius: 6px;
+}
+
+.flagshipActions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.flagshipImageContainer {
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  background: #0f172a;
+}
+
+.flagshipImageContainer img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.flagshipImageContainer:hover img {
+  transform: scale(1.02);
+}
+
+/* ─── Hardware Trio Grid ─── */
+.hardwareGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 36px;
+}
+
+.hardwareCard {
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s, border-color 0.25s;
+}
+
+.hardwareCard:hover {
+  transform: translateY(-4px);
+  border-color: rgba(45, 212, 191, 0.35);
+}
+
+.hardwareImgWrap {
+  height: 200px;
+  overflow: hidden;
+  background: #0a0f1d;
+}
+
+.hardwareImgWrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hardwareBody {
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.hardwareBody h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.hardwareBody p {
+  font-size: 13px;
+  color: #94a3b8;
+  line-height: 1.55;
+  margin-bottom: 18px;
+  flex-grow: 1;
+}
+
+/* ─── Products Catalog & Matrix ─── */
+.productCategorySection {
+  margin-bottom: 48px;
+}
+
+.categoryHeading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding-bottom: 14px;
+  margin-bottom: 24px;
+}
+
+.categoryTitleWrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.categoryIcon {
+  font-size: 20px;
+  color: #2dd4bf;
+}
+
+.categoryTitle {
+  font-size: 20px;
+  font-weight: 700;
+  color: #f1f5f9;
+}
+
+.categoryBadgeCount {
+  font-size: 12px;
+  color: #64748b;
+  font-weight: 600;
+}
+
+.productCardsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.productItemCard {
+  background: rgba(15, 23, 42, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 12px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.25s ease;
+  position: relative;
+}
+
+.productItemCard:hover {
+  background: rgba(15, 23, 42, 0.85);
+  border-color: rgba(45, 212, 191, 0.3);
+  transform: translateY(-3px);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.itemIcon {
+  width: 40px;
+  height: 40px;
+  background: rgba(45, 212, 191, 0.1);
+  border: 1px solid rgba(45, 212, 191, 0.2);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2dd4bf;
+  font-size: 18px;
+}
+
+.productIdCode {
+  font-size: 11px;
+  font-family: monospace;
+  color: #64748b;
+  background: rgba(255, 255, 255, 0.04);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.cardItemTitle {
+  font-size: 17px;
+  font-weight: 700;
+  color: #f8fafc;
+  margin-bottom: 8px;
+}
+
+.cardItemDesc {
+  font-size: 13px;
+  color: #94a3b8;
+  line-height: 1.55;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+/* ─── Ready-To-Paste Action Link ─── */
+.productActionRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding-top: 14px;
+  margin-top: auto;
+}
+
+.pasteLinkBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #2dd4bf;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.pasteLinkBtn:hover {
+  color: #38bdf8;
+  gap: 9px;
+}
+
+.statusIndicator {
+  font-size: 11px;
+  color: #10b981;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.statusDot {
+  width: 5px;
+  height: 5px;
+  background: #10b981;
+  border-radius: 50%;
+}
+
+/* ─── Architecture / Compliance Strip ─── */
+.architectureStrip {
+  background: rgba(15, 23, 42, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 36px 32px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+  margin-top: 20px;
+}
+
+.archFeature {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.archFeature h5 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.archFeature p {
+  font-size: 13px;
+  color: #94a3b8;
+  line-height: 1.5;
+}
+
+/* ─── Domain CTA ─── */
+.domainCtaCard {
+  background: linear-gradient(135deg, rgba(13, 148, 136, 0.15) 0%, rgba(2, 132, 199, 0.15) 100%);
+  border: 1px solid rgba(45, 212, 191, 0.3);
+  border-radius: 20px;
+  padding: 56px 40px;
+  text-align: center;
+  margin: 64px auto 80px;
+  max-width: 1000px;
+}
+
+.domainCtaCard h3 {
+  font-size: 34px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.domainCtaCard p {
+  font-size: 16px;
+  color: #cbd5e1;
+  max-width: 640px;
+  margin: 0 auto 32px;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .flagshipCard {
+    grid-template-columns: 1fr;
+  }
+  .hardwareGrid {
+    grid-template-columns: 1fr;
+  }
+  .architectureStrip {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .heroTitle {
+    font-size: 38px;
+  }
+  .architectureStrip {
+    grid-template-columns: 1fr;
+  }
+}
