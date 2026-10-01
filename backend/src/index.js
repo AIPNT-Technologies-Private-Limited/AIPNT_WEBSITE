@@ -5,10 +5,18 @@ const cookieParser = require('cookie-parser');
 const jwt = require('jsonwebtoken');
 const dotenv = require('dotenv');
 const contactRoutes = require('./routes/contact.routes');
+const cors = require('cors');
 
 dotenv.config({path:'../.env'});
 console.log('Mongo URI:', process.env.MONGODB_URI)
-
+app.use(
+  cors({
+    origin: process.env.CORS_ORIGIN,
+    methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
+    credentials: true,
+  })
+);
 
 
 
