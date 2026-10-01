@@ -1,8 +1,13 @@
+
 const contactService = require('../services/contact.service');
 
 const createContact = async (req, res) => {
   try {
-    const enquiry = await contactService.createContactEnquiry(req.body);
+    const enquiry = await contactService.createContactEnquiry({
+      ...req.body,
+      ipAddress: req.ip,
+      userAgent: req.get('user-agent') || null,
+    });
 
     return res.status(201).json({
       success: true,

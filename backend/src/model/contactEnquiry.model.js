@@ -36,6 +36,15 @@ const contactEnquirySchema = new mongoose.Schema(
       required: true,
       trim: true,
     },
+    ipAddress: {
+  type: String,
+  default: null,
+},
+
+userAgent: {
+  type: String,
+  default: null,
+},
   },
   {
     timestamps: true,
