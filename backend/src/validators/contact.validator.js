@@ -29,7 +29,7 @@ const contactValidator = [
     .isLength({ max: 150 })
     .withMessage('Company name must not exceed 150 characters.'),
 
-  body('areaOfInterest')
+  body('interest')
   .trim()
   .notEmpty()
   .withMessage('Area of Interest is required.')

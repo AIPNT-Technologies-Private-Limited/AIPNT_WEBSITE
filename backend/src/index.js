@@ -4,11 +4,11 @@ const mongoose = require('mongoose');
 const cookieParser = require('cookie-parser');
 const jwt = require('jsonwebtoken');
 const dotenv = require('dotenv');
-const contactRoutes = require('./routes/contact.routes');
-const cors = require('cors');
+
 
 dotenv.config({path:'../.env'});
-console.log('Mongo URI:', process.env.MONGODB_URI)
+const contactRoutes = require('./routes/contact.routes');
+const cors = require('cors');
 app.use(
   cors({
     origin: process.env.CORS_ORIGIN,
