@@ -29,7 +29,7 @@ const contactValidator = [
     .isLength({ max: 150 })
     .withMessage('Company name must not exceed 150 characters.'),
 
-  body('areaOfInterest')
+  body('interest')
   .trim()
   .notEmpty()
   .withMessage('Area of Interest is required.')
@@ -40,6 +40,7 @@ const contactValidator = [
     'medtech',
     'edutech',
     'corporate',
+    'software_solutions',
     'other',
   ])
   .withMessage('Please select a valid Area of Interest.'),
