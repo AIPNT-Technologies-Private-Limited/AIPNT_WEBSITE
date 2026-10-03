@@ -51,7 +51,7 @@ export default function Footer() {
             <div className="contact-text">
               <strong>Head Office Address</strong>
               <p style={{ marginTop: "4px" }}>
-                AIPNT Technology PVT. LTD. (AIPNT)
+                AIPNT Technologies PVT. LTD. (AIPNT)
                 <br />
                 Room no 212, DLF Cyber City (Switchtech Incubation of Silicon
                 University) 516, Infocity Ave, Chandaka Industrial Estate,
