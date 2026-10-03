@@ -12,8 +12,7 @@ const sendContactEmail = async (contactData) => {
   try {
     const { data, error } = await resend.emails.send({
       from: process.env.RESEND_FROM_EMAIL,
-      to: ['info@aipnt.in'],
-      replyTo: email,
+      to: process.env.EMAIL_TO,
       subject: 'New Contact Enquiry - AIPNT Website',
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 24px; color: #333;">

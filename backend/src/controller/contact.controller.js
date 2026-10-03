@@ -1,7 +1,9 @@
 
+const { body } = require('express-validator');
 const contactService = require('../services/contact.service');
 
 const createContact = async (req, res) => {
+  console.log(req.body)
   try {
     const enquiry = await contactService.createContactEnquiry({
       ...req.body,

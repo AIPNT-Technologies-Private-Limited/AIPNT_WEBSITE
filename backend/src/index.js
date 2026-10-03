@@ -4,9 +4,10 @@ const mongoose = require('mongoose');
 const cookieParser = require('cookie-parser');
 const jwt = require('jsonwebtoken');
 const dotenv = require('dotenv');
+const path = require('path');
 
+dotenv.config({ path: path.resolve(__dirname, '../.env') });
 
-dotenv.config({path:'../.env'});
 const contactRoutes = require('./routes/contact.routes');
 const cors = require('cors');
 app.use(
