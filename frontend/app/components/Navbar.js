@@ -56,7 +56,7 @@ export default function Navbar() {
               <Link href="/products/prarambh" onClick={closeMenu}>Prarambh (Code • IoT • AI)</Link>
               <Link href="/products/digiswasth" onClick={closeMenu}>DigiSwasth (AI Healthcare)</Link>
               <Link href="/products/atat" onClick={closeMenu}>ATAT (AI Teaching Assistant)</Link>
-              <Link href="/products/constituency-intelligence" onClick={closeMenu}>Grievance Redressal System</Link>
+              <Link href="/products/constituency-intelligence" onClick={closeMenu}>Enterprise AI</Link>
               <Link href="/products" onClick={closeMenu}>All Products Overview</Link>
             </div>
           </li>
