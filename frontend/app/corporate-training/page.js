@@ -66,7 +66,7 @@ export default function CorporateTrainingPage() {
         <div className={styles.heroOverlay}></div>
         <div className={styles.heroContent}>
           <span className={styles.badge}>FOR COMPANIES & TEAMS</span>
-          <h1>Corporate Training Programs</h1>
+          <h1>Corporate Social Responsibility</h1>
           <p>
             Industry-focused AI, data, cloud and automation tracks for employee
             upskilling with measurable outcomes and ROI tracking.
