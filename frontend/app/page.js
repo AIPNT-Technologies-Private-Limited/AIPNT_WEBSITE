@@ -152,7 +152,7 @@ export default function Home() {
                 <FaLandmark />
               </div>
               <h3>DigiTech</h3>
-              <h4>Digitizing how organisations and communities operate.</h4>
+              <h4>Digitising how organisations and communities operate.</h4>
               <p>Digital governance, citizen platforms, workflow automation, IoT and large-scale digital transformation.</p>
               <Link href="/digitech" className="domain-link" style={{color: '#059669'}}>
                 Explore DigiTech <FaArrowRight />
