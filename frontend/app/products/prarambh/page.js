@@ -530,7 +530,7 @@ export default function PrarambhPage() {
             <div className={styles.noInstallBanner}>
               <FaGlobe className={styles.noInstallIcon} />
               <div className={styles.noInstallText}>
-                <strong>No Installation — Just Open &amp; Start Creating!</strong>
+                <strong>Just Open &amp; Start Creating!</strong>
                 <span>Runs completely inside modern web browsers with instant WebUSB hardware flashing.</span>
               </div>
             </div>
