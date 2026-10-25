@@ -171,7 +171,7 @@ export default function Home() {
               <h3>Enterprise AI</h3>
               <h4>AI systems built around your organisation.</h4>
               <p>Enterprise copilots, RAG platforms, AI agents, document intelligence, automation and private AI deployments.</p>
-              <Link href="/enterprise-ai" className="domain-link" style={{color: '#7c3aed'}}>
+              <Link href="https://enterprise.aipnt.in/" className="domain-link" style={{color: '#7c3aed'}}>
                 Explore Enterprise AI <FaArrowRight />
               </Link>
             </div>
