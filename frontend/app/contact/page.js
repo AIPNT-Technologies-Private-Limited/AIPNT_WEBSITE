@@ -115,8 +115,7 @@ export default function ContactPage() {
     setIsSubmitting(true);
 
     try {
-      const apiBaseUrl = process.env.NEXT_PUBLIC_API_URL || "";
-      const response = await fetch(`${apiBaseUrl}/api/contact`, {
+      const response = await fetch("/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
